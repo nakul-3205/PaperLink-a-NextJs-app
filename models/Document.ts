@@ -5,6 +5,7 @@ export interface IDocument  {
   content: string; 
   owner: Types.ObjectId; 
   collaborators?: Types.ObjectId[]; 
+  
   createdAt: Date;
   updatedAt: Date;
 }

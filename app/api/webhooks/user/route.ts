@@ -34,6 +34,7 @@ const svix_signature = req.headers.get('svix-signature')!;
 
   try {
     await connectToDB();
+    console.log('reached heree')
 
     const userExists = await User.findOne({ clerkId: id });
 
@@ -46,7 +47,7 @@ const svix_signature = req.headers.get('svix-signature')!;
         image_url,
       });
     }
-
+     console.log(userExists)
     return NextResponse.json({ success: true });
   } catch (err) {
     console.error('DB error', err);

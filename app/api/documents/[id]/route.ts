@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@clerk/nextjs/server";
 import { connectToDB } from "@/lib/connectToDb";
-import User from "@/models/User";
 import DocumentModel, { IDocument } from "@/models/Document";
 import DocumentHistory from "@/models/DocumentHistory";
 
